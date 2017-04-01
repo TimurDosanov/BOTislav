@@ -56,10 +56,10 @@ public class TestBot1 extends DefaultBWListener {
             if (myUnit.getType() == UnitType.Protoss_Nexus && self.minerals() >= 50 && self.allUnitCount()<=9 ) {
                 myUnit.train(UnitType.Protoss_Probe);
             }
-            if(myUnit.getType()==UnitType.Protoss_Pylon&& UnitType.Protoss_Pylon !=null&&  self.minerals() >=150)
+            if(self.minerals() >=150)
             {
-                if (myUnit.getType() == UnitType.Protoss_Probe) {
-                    //get a nice place to build a supply depot
+                if (myUnit.getType() == UnitType.Protoss_Probe && self.allUnitCount() >11) {
+
                     TilePosition buildTile= getBuildTile(myUnit, UnitType.Protoss_Gateway, self.getStartLocation());
                     //and, if found, send the worker to build it (and leave others alone - break;)
                     if (buildTile != null) {
