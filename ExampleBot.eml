@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="bwmirror_v2_5.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/lib/bwmirror_v2_5.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/lib/bwmirror_v2_5.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/bwmirror_v2_5.jar!/"/>
+	</lib>
+</component>
